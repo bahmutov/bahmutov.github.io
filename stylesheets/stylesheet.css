@@ -165,7 +165,8 @@ pre {
 
 code {
   background: rgba(0, 0, 0, 0.9);
-  font-size: 14px;
+  font-size: 16px;
+  padding: 0 4px;
 }
 
 table {
