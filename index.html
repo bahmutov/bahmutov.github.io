@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gleb Bahmutov" />
     <meta name="google-site-verification" content="wuTolclTdbqtu-yixYoV5plAfu_2Y5yK59fbt56lvcI" />
 
@@ -26,7 +27,7 @@
         <a href="https://twitter.com/bahmutov" class="twitter-follow-button" data-show-count="false">Follow @bahmutov</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-        
+
       </div>
     </header>
 
@@ -45,17 +46,17 @@ on topics related to software craft.
 <em>for everyone:</em>
 <ul>
 <li><a href="http://glebbahmutov.com/slides-now/">slides-now</a> is a stand alone slide presentation viewer
-implemented inside the browser without any server side components. Just drag and drop a Markdown (.md) file 
-into the website page and it will play a stylish HTML5 presentation. I love the simplicity of editing my talks 
-as pure text files, keeping versions using Git and playing them whenever I need without logging in / uploading / etc. 
-It even works when I am offline, because the website is so simple it works from cache. 
+implemented inside the browser without any server side components. Just drag and drop a Markdown (.md) file
+into the website page and it will play a stylish HTML5 presentation. I love the simplicity of editing my talks
+as pure text files, keeping versions using Git and playing them whenever I need without logging in / uploading / etc.
+It even works when I am offline, because the website is so simple it works from cache.
 <p>
 Alternatively, there is Chrome <a href="https://chrome.google.com/webstore/detail/slides-now/hcohekeghgkdeimnjfmpdlgccfamggac">extension</a>
 and a stand alone Node <a href="https://npmjs.org/package/slides-now-node">module</a> if you prefer.
 </p>
 </li>
 <li><a href="http://readonpaper.com/">read on paper</a> is the simplest way to send readable article from PC to your tablet for easier reading. It saves your eyes and trees!</li>
-  
+
 </ul>
 
 <em>open source tools for developers:</em>
@@ -63,16 +64,16 @@ and a stand alone Node <a href="https://npmjs.org/package/slides-now-node">modul
 <li><a href="https://github.com/bahmutov/deps-ok">deps-ok</a> quickly checks if any of the top level dependencies
 are missing or out of date. Faster than using <code>npm ls</code>.
 I also wrote <a href="https://github.com/bahmutov/grunt-deps-ok">grunt-deps-ok</a> grunt plugin.</li>
-<li><a href="https://npmjs.org/package/changed">changed</a> is a command line tool that displays changes for a 
+<li><a href="https://npmjs.org/package/changed">changed</a> is a command line tool that displays changes for a
 given nodejs package, so you don't have to hunt manually.</li>
-<li><a href="https://npmjs.org/package/next-update">next-update</a> is a stand alone nodejs tool that can check 
-if upgrading your module's dependencies to newer versions breaks any tests. Makes it a breeze to keep your module 
+<li><a href="https://npmjs.org/package/next-update">next-update</a> is a stand alone nodejs tool that can check
+if upgrading your module's dependencies to newer versions breaks any tests. Makes it a breeze to keep your module
 using the latest and greatest 3rd party tools.</li>
 <li>A homebrew unit testing framework <a href="https://github.com/bahmutov/gt">gt</a> that follows QUnit syntax but adds better async testing and code coverage (via <a href="https://github.com/gotwarlost/istanbul">istanbul</a>).</li>
 <li>There is static source complexity tool <a href="https://github.com/bahmutov/js-complexity-viz">jsc</a> that keeps my code nice and understandable</li>
 <li>I wrote <a href="https://github.com/bahmutov/lasso">lasso</a> to instrument widget test pages on the fly, giving you insight into the code covered for by the unit tests. There is no setup necessary, and check out the list of unit test frameworks in the examples folder: everything just works!</li>
 <li>When the number of tests grows, and you cannot wait to run them all on each code change, take a look at <a href="https://github.com/bahmutov/untested">untested</a>. It stores test point mappings for each JavaScript source file (generated from code coverage reported by <em>gt</em> and <em>lasso</em>), and returns which unit tests should be run for all changed files. Test your changes all the time very quickly!</li>
-<li>Well documented modules with lots of API examples are easier to reuse, maintain and develop. 
+<li>Well documented modules with lots of API examples are easier to reuse, maintain and develop.
 I wrote js API documentation tool <a href="https://npmjs.org/package/xplain">xplain</a> that takes an unusual approach of placing unit tests as examples in the API documentation. The specific test syntax is transformed into human readable format, producing documentation that looks hand-crafted, will always stay in sync with the code, and does not require any developer maintenance.</li>
 <li>I automate basic sanity check for any website deployment using <a href="https://github.com/bahmutov/clean-console">clean-console</a>. It loads the url using phantomjs WebKit browser and checks for any JavaScript errors. This is quick test that runs as a last step of the deployment script.</li>
 <li><a href="http://glebbahmutov.com/risk-map/">risk-map</a> is a cool way to visualize the entire project's code
@@ -84,7 +85,7 @@ I wrote js API documentation tool <a href="https://npmjs.org/package/xplain">xpl
 </li>
 <li><a href="https://github.com/bahmutov/qunit-promises">qunit-promises</a> is a QUnit plugin that makes checking promises a breeze.</li>
 <li><a href="https://github.com/bahmutov/npm-utils">npm-utils</a> is a set of promise-returning functions that run different NPM commands.</li>
-  
+
 </ul>
 
 <em>front-end components:</em>
@@ -92,9 +93,9 @@ I wrote js API documentation tool <a href="https://npmjs.org/package/xplain">xpl
   <li><a href="http://glebbahmutov.com/code-box/">code-box</a> is a lightbox for code blocks. Adds full screen lightbox
     to all code elements in your page with single call.
   </li>
-  <li><a href="https://github.com/bahmutov/progress-full-width">progress-full-width</a> is a progress bar along 
+  <li><a href="https://github.com/bahmutov/progress-full-width">progress-full-width</a> is a progress bar along
   the bottom of the page, can be stacked or run on a timer.</li>
-  <li><a href="https://github.com/bahmutov/sticky-right-top-icon">sticky-right-top-icon</a> adds a sticky icon to 
+  <li><a href="https://github.com/bahmutov/sticky-right-top-icon">sticky-right-top-icon</a> adds a sticky icon to
 any element, even if it has scrollable content inside.</li>
 </ul>
 
@@ -106,7 +107,7 @@ any element, even if it has scrollable content inside.</li>
 
 <h3>Talks</h3>
 
-<p>I am a member of multiple meetups in the Boston area and spoke about 
+<p>I am a member of multiple meetups in the Boston area and spoke about
 <a href="https://bitbucket.org/bahmutov/talks-public/raw/master/grunt.md">grunt</a>,
 <a href="https://bitbucket.org/bahmutov/talks-public/raw/master/coverage-and-tests.md">code coverage and testing</a>,
 <a href="https://bitbucket.org/bahmutov/talks-public/raw/master/risk-map.md">technical debt visualization</a>
@@ -132,6 +133,6 @@ any element, even if it has scrollable content inside.</li>
   ga('send', 'pageview');
 
 </script>
-    
+
   </body>
 </html>

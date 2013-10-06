@@ -251,3 +251,33 @@ a {
 .cf {
   zoom:1;
 }
+
+@media only screen and (max-width : 320px) {
+  /* better style for phone screens */
+  .container {
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0 0 0 0px;
+  }
+
+  header h1:before {
+    content: "";
+  }
+
+  section {
+    margin: 0 0 0 0 !important;
+  }
+
+  ul li {
+    margin-bottom: 0.5em;
+  }
+
+  ul li:before {
+    margin-left: -27px;
+    margin-right: 11px;
+  }
+}
