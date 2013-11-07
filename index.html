@@ -78,7 +78,9 @@ using the latest and greatest 3rd party tools.</li>
 <li>When the number of tests grows, and you cannot wait to run them all on each code change, take a look at <a href="https://github.com/bahmutov/untested">untested</a>. It stores test point mappings for each JavaScript source file (generated from code coverage reported by <em>gt</em> and <em>lasso</em>), and returns which unit tests should be run for all changed files. Test your changes all the time very quickly!</li>
 <li>Well documented modules with lots of API examples are easier to reuse, maintain and develop.
 I wrote js API documentation tool <a href="https://npmjs.org/package/xplain">xplain</a> that takes an unusual approach of placing unit tests as examples in the API documentation. The specific test syntax is transformed into human readable format, producing documentation that looks hand-crafted, will always stay in sync with the code, and does not require any developer maintenance.</li>
-<li>I automate basic sanity check for any website deployment using <a href="https://github.com/bahmutov/clean-console">clean-console</a>. It loads the url using phantomjs WebKit browser and checks for any JavaScript errors. This is quick test that runs as a last step of the deployment script.</li>
+<li>I automate basic sanity check for any website deployment using <a href="https://github.com/bahmutov/clean-console">clean-console</a>. It loads the url using phantomjs WebKit browser and checks for any JavaScript errors. This is quick test that runs as a last step of the deployment script.
+  There is <a href="https://github.com/bahmutov/grunt-clean-console">grunt-clean-console</a> plugin for grunt.
+</li>
 <li><a href="http://glebbahmutov.com/risk-map/">risk-map</a> is a cool way to visualize the entire project's code
   complexity and unit test coverage using D3 treemap layout. Shows high risk source files in a very obvious way as
   large red patches. I talk about my inspiration for the project in
