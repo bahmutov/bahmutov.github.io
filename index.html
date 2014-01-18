@@ -122,6 +122,8 @@ and stable files. Read why I think this is important in
 <li><a href="https://github.com/bahmutov/dotdot">dotdot</a> installs a hook into Node loader and allows you
   to write shorthand <code>foo..bar('something')</code> instead of <code>foo.bar.bind(foo, 'something')</code>.
   You can also write <code>fn..('args')</code> instead of <code>fn.bind(null, 'args')</code>
+  To make it compatible with build tools, I wrote <a href="https://github.com/bahmutov/gulp-dotdot">gulp-dotdot</a>
+  that transforms `..` notation in the stream.
 </li>
 <li><a href="https://github.com/bahmutov/node-hook">node-hook</a> is a simple way to hook into
   Node loader to transform the source before compiling it. There are multiple ways this is 
