@@ -90,7 +90,9 @@ if upgrading your module's dependencies to newer versions breaks any tests. Make
 using the latest and greatest 3rd party tools. 
 Even if you do not have tests, you can use <a href="http://next-update.herokuapp.com/">next-update-stats</a> service
 to check overall module upgrade success statistics (collected anonymously).</li>
-<li>A homebrew unit testing framework <a href="https://github.com/bahmutov/gt">gt</a> that follows QUnit syntax but adds better async testing and code coverage (via <a href="https://github.com/gotwarlost/istanbul">istanbul</a>).</li>
+<li>A homebrew unit testing framework <a href="https://github.com/bahmutov/gt">gt</a> that follows QUnit syntax but adds better async testing and code coverage (via <a href="https://github.com/gotwarlost/istanbul">istanbul</a>).
+  There is a<a href="https://github.com/bahmutov/grunt-gt">grunt-gt</a> to run GT as a grunt task.
+</li>
 <li>There is static source complexity tool <a href="https://github.com/bahmutov/js-complexity-viz">jsc</a> that keeps my code nice and understandable</li>
 <li>I wrote <a href="https://github.com/bahmutov/lasso">lasso</a> to instrument widget test pages on the fly, giving you insight into the code covered for by the unit tests. There is no setup necessary, and check out the list of unit test frameworks in the examples folder: everything just works!</li>
 <li>When the number of tests grows, and you cannot wait to run them all on each code change, take a look at <a href="https://github.com/bahmutov/untested">untested</a>. It stores test point mappings for each JavaScript source file (generated from code coverage reported by <em>gt</em> and <em>lasso</em>), and returns which unit tests should be run for all changed files. Test your changes all the time very quickly!</li>
