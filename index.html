@@ -23,6 +23,7 @@
         <a href="http://bahmutov.calepin.co/" title="Better world by better software">blog</a>
         <a href="https://github.com/bahmutov" title="My projects at github">github/bahmutov</a>
         <a href="https://twitter.com/bahmutov" title="Twitter @bahmutov">@bahmutov</a>
+        <a href="javascript:void(0)" title="Search my blog posts and projects" id="search">search</a>
       </div>
     </header>
 
@@ -45,6 +46,10 @@
           s.parentNode.insertBefore(gcse, s);
 
         })();
+
+        document.getElementById('search').addEventListener('click', function () {
+          document.getElementById('___gcse_0').style.display = 'block';
+        });
       </script>
       <gcse:search></gcse:search>
 

@@ -9,6 +9,11 @@ body {
 }
 
 /* adjust custom search result display */
+/* initially, hide the search widget */
+#___gcse_0 {
+  display: none;
+}
+
 .gsc-control-cse {
   background-color: inherit !important;
   border: none !important;
@@ -77,12 +82,14 @@ a.gs-title {
 
 /* General & 'Reset' Stuff */
 
+/*
 #after-main-content {
   position: absolute;
   top: 280px;
   max-width: 600px;
   margin: 0 auto;
 }
+*/
 
 .container {
   width: 90%;
