@@ -8,13 +8,88 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
+/* adjust custom search result display */
+.gsc-control-cse {
+  background-color: inherit !important;
+  border: none !important;
+}
+
+.gsc-control-cse:before {
+  content: "Search my projects and blog posts";
+  margin-left: 10px;
+  color: #eaeaea;
+}
+
+input.gsc-input {
+  border-color: #b5e853 !important;
+}
+
+input.gsc-search-button {
+  border-color: #b5e853 !important;
+  border-radius: 3px;
+  background-color: inherit !important;
+  color: #eaeaea;
+}
+
+.gs-snippet {
+  background-color: inherit !important;
+  border-color: #b5e853 !important;
+}
+
+.gsc-results-wrapper-overlay {
+  background-color: #151515 !important;
+  color: #eaeaea !important;
+}
+
+.gsc-webResult .gsc-result {
+  border: solid 0px black !important;
+}
+
+a.gs-title {
+  text-shadow: none !important;
+}
+
+.gsc-result-info-container, .gsc-result-info, .gsc-result, .gs-webResult .gs-snippet, a.gs-label, .gsc-inline-block {
+  background-color: #151515 !important;
+  color: #eaeaea !important;
+}
+
+.gsc-tabsArea {
+  border: solid 0px black !important;
+}
+
+.gsc-tabHeader.gsc-tabhActive {
+  color: #b5e853 !important;
+  border: solid 0px black !important;
+}
+
+.gsc-tabHeader.gsc-tabhInactive {
+  border: solid 0px black !important;
+}
+
+.gs-visibleUrl {
+  color: #b5e853 !important;
+}
+
+.gs-title {
+  color: #63c0f5 !important;
+}
+
 /* General & 'Reset' Stuff */
+
+#after-main-content {
+  position: absolute;
+  top: 280px;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .container {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
 }
+
 
 section {
   display: block;
@@ -40,13 +115,13 @@ header {
   width: 100%;
   /*border-bottom: 1px dashed #b5e853;*/
   padding: 20px 0 5px 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 0px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -55,17 +130,21 @@ header h1 {
                0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
+  /* prevent text from breaking into multiple lines */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
+/*
 header h1:before {
   content: "./ ";
   font-size: 24px;
-}
+}*/
 
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #888;
 }
 
 #downloads .btn {
@@ -263,7 +342,7 @@ a {
     line-height: 1.5;
     margin: 0 0 0 0px;
   }
-  
+
   header {
     margin: 0 0 5px 0;
   }
@@ -271,7 +350,7 @@ a {
   header h1:before {
     content: "";
   }
-  
+
   h2, h3, h4, h5, h6 {
     margin: 0 0 5px;
   }
