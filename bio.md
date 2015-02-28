@@ -5,6 +5,6 @@ Later Gleb switched to writing browser data visualization software at MathWorks.
 After a year, Gleb went back to the startup environment and developed software quality 
 analysis tools at uTest (now Applause). 
 Today Gleb is developing real-time financial analysis tools at Kensho. 
-He blogs about software development topics at [http://bahmutov.calepin.co/](http://bahmutov.calepin.co/)
+He blogs about software development topics at [http://glebbahmutov.com/blog/](http://glebbahmutov.com/blog/)
 and links his projects at [http://glebbahmutov.com/](http://glebbahmutov.com/). 
 You can follow him and his work [@bahmutov](https://twitter.com/bahmutov)
