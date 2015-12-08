@@ -365,8 +365,43 @@ a {
   zoom:1;
 }
 
+@media only screen and (max-width : 520px) {
+  /* better style for small screens */
+  #project-search-text {
+    width: 90%;
+    float: left;
+    border-radius: 0;
+    padding: 5px 10px 3px;
+    font-size: large;
+    background-color: inherit;
+    border: none;
+
+    border-bottom: 2px solid #b5e853;
+    color: white;
+    margin: 0 auto 1em;
+  }
+
+  #projects {
+    -webkit-padding-start: 0;
+  }
+
+  ul li {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  ul li:before {
+    content: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
 @media only screen and (max-width : 320px) {
   /* better style for phone screens */
+
   .container {
     width: 95%;
   }
@@ -391,14 +426,5 @@ a {
 
   section {
     margin: 0 0 0 0 !important;
-  }
-
-  ul li {
-    margin-bottom: 0.5em;
-  }
-
-  ul li:before {
-    margin-left: -27px;
-    margin-right: 11px;
   }
 }
