@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gleb Bahmutov" />
-    <meta name="google-site-verification" content="wuTolclTdbqtu-yixYoV5plAfu_2Y5yK59fbt56lvcI" />
-
-    <link rel="icon" type="image/png" href="gleb.png" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <meta charset="utf-8">
     <title>Dr. Gleb Bahmutov, PhD</title>
 
-    <script>
-      (function redirectSearch() {
-        // redirect search queries to custom search endpoint
-        function hasSearch() {
-          return document.location.search.indexOf('q=') !== -1;
-        }
-        if (hasSearch()) {
-          console.log('has search', document.location.search);
-          var customSearchUrl = 'https://www.google.com/cse/publicurl?cx=017313398942136460773:ey1oxxkrkve&';
-          document.location = customSearchUrl + document.location.search.substr(1);
-        }
-      }());
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gleb Bahmutov" />
+    <meta http-equiv="Content-Security-Policy"
+      content="script-src
+        https://code.jquery.com
+        https://www.google-analytics.com
+        'self';
+        style-src 'self';">
+
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/pygment_trac.css" media="screen" />
+
+    <script src="dist/custom-search-redirect.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <header>
@@ -36,381 +29,93 @@
         <a href="http://glebbahmutov.com/blog/" title="Better world by better software">blog</a>
         <a href="https://github.com/bahmutov" title="My projects at github">github</a>
         <a href="https://twitter.com/bahmutov" title="Twitter @bahmutov">@bahmutov</a>
+        <!--
         <a href="javascript:void(0)" title="Search my blog posts and projects" id="search">search</a>
+        -->
         <a href="https://slides.com/bahmutov" title="Slide decks from my presentations">slides</a>
         <a href="https://www.google.com/calendar/embed?src=aGU2bWlpcGllbXM0N3QzNWNjcDRlZXRxcXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" title="My speaking / attending conferences calendar">conferences</a>
-        <p><a href="videos.html">videos</a> from my conference talks. For example, this is me speaking at ng-conf 2015 about <a href="http://youtu.be/lceLw8ROUP8?list=PLOETEcp3DkCoNnlhE-7fovYvqwVPrRiY7" title="and trying to be funny">running digest cycle in web worker</a></p>
+        <a href="videos.html" title="Videos from my talks">videos</a>
       </div>
     </header>
 
-<div class="container">
-      <section id="main_content">
-      <!--
-      <a class="twitter-timeline" height="100" data-chrome="noheader nofooter transparent" href="https://twitter.com/bahmutov" data-widget-id="407741680272420864">Tweets by @bahmutov</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      -->
-
-      <script>
-        (function() {
-          var cx = '017313398942136460773:ey1oxxkrkve';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-              '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-
-        })();
-
-        document.getElementById('search').addEventListener('click', function () {
-          document.getElementById('___gcse_0').style.display = 'block';
-        });
-      </script>
+    <!-- custom search -->
+    <!-- disable unless it can work with CSP -->
+    <!--
+    <div class="container">
       <gcse:search></gcse:search>
+    </div>
+    -->
 
+    <!-- today -->
+    <div class="container">
       <div id="after-main-content">
-      <h3 id="today">Today</h3>
+        <h3 id="today">Today</h3>
 
-<p>I am a software engineer interested in front and back end development, especially in using JavaScript (and its flavors) across the entire stack.
-I work at <a href="http://www.kensho.com/">Kensho</a>, making the world a better place. I try to <a href="http://glebbahmutov.com/blog/">blog</a>
-on topics related to software craft. This is what people say about my blog posts and presentations:
-</p>
-<p>
-<img src="https://raw.githubusercontent.com/bahmutov/bahmutov.github.io/master/images/blog-slides-feedback.png">
-</p>
+        <p>I am a software engineer interested in front and back end development,
+          especially in using JavaScript (and its flavors) across the entire stack.
+          I work at <a href="http://www.kensho.com/">Kensho</a>, making the world a better place.
+          I try to <a href="http://glebbahmutov.com/blog/">blog</a>
+          on topics related to software craft. This is what people say about my blog posts and presentations:
+        </p>
+        <p>
+        <img src="https://raw.githubusercontent.com/bahmutov/bahmutov.github.io/master/images/blog-slides-feedback.png">
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h3 id="today">Projects</h3>
+      <p>In my spare time I built some cool stuff; see the links below. I try to keep modules small because I <a href="https://github.com/sindresorhus/ama/issues/10">agree with Sindre Sorhus</a>.</p>
 
-<p>In my spare time I built some cool stuff; see the links below. I try to keep modules small because I <a href="https://github.com/sindresorhus/ama/issues/10">agree with Sindre Sorhus</a>.</p>
+      <section id="main_content">
+        <div id="projects-list">
+          <input type="text" autofocus v-model="searchText"
+            placeholder="Project name, tag, text ..." id="project-search-text"
+            debounce="300">
 
-<em>for everyone:</em>
-<ul>
-<li><a href="http://glebbahmutov.com/2048/">2048 5x5</a> is a clone of the famous 2048 game with larger board and two new tiles
-  appearing at each turn. Makes the game very fast paced. <a href="https://github.com/bahmutov/2048">source</a>.
-</li>
-<li><a href="http://glebbahmutov.com/2048-cram/">2048-cram</a> lets you play standard 2048 but every N seconds
-  pops a JavaScript question. Answer incorrectly and lose a turn, plus get a penalty tile!
-  <a href="https://github.com/bahmutov/2048-cram">source</a>.
-</li>
-<li><a href="http://glebbahmutov.com/slides-now/">slides-now</a> is a stand alone slide presentation viewer
-implemented inside the browser without any server side components. Just drag and drop a Markdown (.md) file
-into the website page and it will play a stylish HTML5 presentation. I love the simplicity of editing my talks
-as pure text files, keeping versions using Git and playing them whenever I need without logging in / uploading / etc.
-It even works when I am offline, because the website is so simple it works from cache.
-<p>
-Alternatively, there is Chrome <a href="https://chrome.google.com/webstore/detail/slides-now/hcohekeghgkdeimnjfmpdlgccfamggac">extension</a>
-and a stand alone Node <a href="https://npmjs.org/package/slides-now-node">module</a> if you prefer.
-</p>
-</li>
-<li><a href="http://readonpaper.com/">read on paper</a> is the simplest way to send readable article from PC to your tablet for easier reading. It saves your eyes and trees!
-</li>
-<li>Command line <a href="https://github.com/bahmutov/boggle">Boggle</a> solver.</li>
-</ul>
-
-<em>open source tools for developers:</em>
-<ul>
-<li><a href="https://github.com/bahmutov/d3-helpers">d3-helpers</a> are tiny functional utilities mostly to simplify
-  callbacks for D3. Also could be used to chain method calls, property access and function applications anywhere.
-</li>
-<li><a href="https://github.com/bahmutov/dirty-water">dirty-water</a> is CLI tool measuring
-how much JavaScript is in your EJS / AngularJs templates. One should not mix
-js with html, or css with html, or generate html in js. Or drink dirty water.</li>
-<li><a href="https://github.com/bahmutov/deps-ok">deps-ok</a> quickly checks if any of the top level dependencies
-are missing or out of date. Faster than using <code>npm ls</code>.
-I also wrote <a href="https://github.com/bahmutov/grunt-deps-ok">grunt-deps-ok</a> grunt plugin.</li>
-<li><a href="https://github.com/bahmutov/grunt-nice-package">grunt-nice-package</a> is an opinionated <i>package.json</i> validator.</li>
-<li><a href="https://github.com/bahmutov/grunt-npm2bower-sync">grunt-npm2bower-sync</a> is a fork of
-<a href="https://github.com/jonschlinkert/grunt-sync-pkg">another project</a> that copies main properties from <i>package.json</i> to <i>bower.json</i></li>
-<li><a href="https://npmjs.org/package/changed">changed</a> is a command line tool that displays changes for a
-given nodejs package, so you don't have to hunt manually.</li>
-<li><a href="https://npmjs.org/package/next-update">next-update</a> is a stand alone nodejs tool that can check
-if upgrading your module's dependencies to newer versions breaks any tests. Makes it a breeze to keep your module
-using the latest and greatest 3rd party tools.
-Even if you do not have tests, you can use <a href="http://next-update.herokuapp.com/">next-update-stats</a> service
-to check overall module upgrade success statistics (collected anonymously).</li>
-<li><a href="https://github.com/bahmutov/next-updater">next-updater</a> can update all your github repos that each pass through next-update.
-  Makes keeping dependencies up to date over <strong>all</strong> your projects a breeze.</li>
-<li><a href="https://github.com/bahmutov/dont-break">dont-break</a> allows to check if your library would break projects that depend on it if you publish it as it is now.</li>
-<li>A homebrew unit testing framework <a href="https://github.com/bahmutov/gt">gt</a> that follows QUnit syntax but adds better async testing and code coverage (via <a href="https://github.com/gotwarlost/istanbul">istanbul</a>).
-  There is a<a href="https://github.com/bahmutov/grunt-gt">grunt-gt</a> to run GT as a grunt task.
-</li>
-<li>There is static source complexity tool <a href="https://github.com/bahmutov/js-complexity-viz">jsc</a> that keeps my code nice and understandable</li>
-<li>I wrote <a href="https://github.com/bahmutov/lasso">lasso</a> to instrument widget test pages on the fly, giving you insight into the code covered for by the unit tests. There is no setup necessary, and check out the list of unit test frameworks in the examples folder: everything just works!</li>
-<li>When the number of tests grows, and you cannot wait to run them all on each code change, take a look at <a href="https://github.com/bahmutov/untested">untested</a>. It stores test point mappings for each JavaScript source file (generated from code coverage reported by <em>gt</em> and <em>lasso</em>), and returns which unit tests should be run for all changed files. Test your changes all the time very quickly!</li>
-<li>Well documented modules with lots of API examples are easier to reuse, maintain and develop.
-I wrote js API documentation tool <a href="https://npmjs.org/package/xplain">xplain</a> that takes an unusual approach of placing unit tests as examples in the API documentation. The specific test syntax is transformed into human readable format, producing documentation that looks hand-crafted, will always stay in sync with the code, and does not require any developer maintenance.
-  I wrote <a href="https://github.com/bahmutov/grunt-xplain">grunt-xplain</a> wrapper.
-</li>
-<li>I automate basic sanity check for any website deployment using <a href="https://github.com/bahmutov/clean-console">clean-console</a>. It loads the url using phantomjs WebKit browser and checks for any JavaScript errors. This is quick test that runs as a last step of the deployment script.
-  There is <a href="https://github.com/bahmutov/grunt-clean-console">grunt-clean-console</a> plugin for grunt.
-</li>
-<li><a href="http://glebbahmutov.com/risk-map/">risk-map</a> is a cool way to visualize the entire project's code
-  complexity and unit test coverage using D3 treemap layout. Shows high risk source files in a very obvious way as
-  large red patches. I talk about my inspiration for the project in
-  <a href="https://bitbucket.org/bahmutov/talks-public/raw/master/risk-map.md">this talk</a>. I am currently working
-  on using <em>risk-map</em> and developer's vanity to improve software quality, see <a href="/man-behind">man-behind</a>
-  prototype.
-</li>
-<li><a href="https://github.com/bahmutov/qunit-promises">qunit-promises</a> is a QUnit plugin that makes checking promises a breeze.</li>
-<li><a href="https://github.com/bahmutov/qunit-once">qunit-once</a> is a QUnit plugin adding module.setupOnce and module.teardownOnce functions.</li>
-<li><a href="https://github.com/bahmutov/qunit-inject">qunit-inject</a> is a QUnit plugin for injecting variables from the module into unit tests by name.</li>
-<li><a href="https://github.com/bahmutov/qunit-helpful">qunit-helpful</a> is a QUnit plugin for automatically providing the entire failed expression. Magical.</li>
-<li><a href="https://github.com/bahmutov/npm-utils">npm-utils</a> is a set of promise-returning functions that run different NPM commands.</li>
-<li><a href="https://npmjs.org/package/jshint-solid">jshint-solid</a> tells how strict your .jshintrc file is. As project matures, you should tighten the Jshint settings.
-There is <a href="https://github.com/bahmutov/grunt-jshint-solid">grunt-jshint-solid</a> plugin for grunt.
-</li>
-<li><a href="https://npmjs.org/package/time-promise">time-promise</a> is a functional decorator measuring time for sync or promise-returning functions.
-It is among my <a href="http://glebbahmutov.com/blog/my-favorite-functional-adaptors/">four favorite functional adaptors</a>.
-</li>
-<li><a href="https://github.com/bahmutov/proud">proud</a> collects NPM downloads for all modules authored by a developer with given username.
-  One can generate a <a href="https://github.com/bahmutov/proud-badge">proud-badge</a>, even host a simple
-  <a href="https://github.com/bahmutov/proud-connect">proud-connect</a> server or use the deployed Heroku
-  <a href="http://proud.herokuapp.com/">proud.herokuapp.com</a> app.
-</li>
-<li><a href="https://github.com/bahmutov/aged">aged</a> is tiny utility grunt helper for filtering
-files by last modified age. Allows to define separate sets of quality metrics for recently modified (fresh)
-and stable files. Read why I think this is important in
-<a href="http://glebbahmutov.com/blog/aged-to-perfection/">Aged to Perfection</a> blog post.
-</li>
-<li><a href="https://github.com/bahmutov/es6-generators-example">es6-generators-example</a> shows how to
-  write EcmaScript6 code with generators and make them available to everyone, even to people who use EcmaScript5 on node.
-</li>
-<li><a href="https://github.com/bahmutov/dotdot">dotdot</a> installs a hook into Node loader and allows you
-  to write shorthand <code>foo..bar('something')</code> instead of <code>foo.bar.bind(foo, 'something')</code>.
-  You can also write <code>fn..('args')</code> instead of <code>fn.bind(null, 'args')</code>
-  To make it compatible with build tools, I wrote <a href="https://github.com/bahmutov/gulp-dotdot">gulp-dotdot</a>
-  that transforms `..` notation in the stream.
-</li>
-<li><a href="https://github.com/bahmutov/node-hook">node-hook</a> is a simple way to hook into
-  Node loader to transform the source before compiling it. There are multiple ways this is
-  <a href="http://glebbahmutov.com/blog/hooking-into-node-loader-for-fun-and-profit/">super useful</a>.
-</li>
-<li><a href="https://github.com/bahmutov/really-need">really-need</a> is a replacement for Node's require
-function. Bust cache, transform loaded source, change loaded object.
-</li>
-<li><a href="https://github.com/bahmutov/connect-slow">connect-slow</a> is middleware for node Connect and Express
-  servers. Allows to selectively delay serving some requests using URL RegExp. Used to polish user experience as
-  described in <a href="http://glebbahmutov.com/blog/give-browser-a-chance/">give browser a chance</a>.
-  I wrote same feature for <a href="http://koajs.com/">Koa</a> server using generators, see <a href="https://github.com/bahmutov/koa-slow">koa-slow</a>.
-</li>
-<li><a href="https://github.com/bahmutov/turtle-run">connect-stop</a> stops some requests based on url. Good for testing.</li>
-<li><a href="https://github.com/bahmutov/console.json">console.json</a> removes need to write
-<code>console.log(JSON.stringify(object, null, 2));</code></li>
-<li><a href="https://github.com/bahmutov/console.html">console.html</a> beautifies and prints HTML code or HTMLNode
-<code>console.html($('#id'));</code></li>
-<li><a href="https://github.com/bahmutov/console.table">console.table</a> adds a method to print array of objects
-  as nice table in Node.
-</li>
-<li><a href="https://github.com/bahmutov/status-gravatar">status-gravatar</a> changes your Gravatar profile
-  image depending on the Travis-ci build status of your projects. Sometimes I look angry when my projects start to fail ;)
-  Uses my <a href="https://github.com/bahmutov/set-gravatar">set-gravatar</a> module for Node.
-</li>
-<li><a href="https://github.com/bahmutov/grunt-help">grunt-help</a> runs given command, captures output and saves
-to given file. Useful to include the program`s <code>--help</code> output directly in the README.md.
-</li>
-<li><a href="https://github.com/bahmutov/iframeable">iframeable</a> is tiny CLI to check if given website could be iframed
-  inside another website (and is susceptible to clickjacking attack).
-</li>
-<li><a href="https://github.com/bahmutov/grunt-filenames">grunt-filenames</a> is a grunt plugin to validate source filenames,
-  for example require all filenames to be lower cased with dashes.
-</li>
-<li><a href="https://github.com/bahmutov/grunt-blank">grunt-blank</a> finds all empty, blank or small files.
-</li>
-<li><a href="https://github.com/bahmutov/console-pop">console-pop</a> buffers calls to <code>console.log</code> and then
-  returns a copy, useful for higher level testing.
-</li>
-<li><a href="https://github.com/bahmutov/bare-objects">bare-objects</a> adds <code>&lt;&gt;</code> syntax to JavaScript
-  via nodejs loader hook. Why? Because bare objects are <a href="http://glebbahmutov.com/blog/sweet-naked-objects/">sweet!</a>
-</li>
-<li><a href="https://github.com/bahmutov/lcov-filter">lcov-filter</a> filters coverage info for some files, useful
-  to send <a href="http://glebbahmutov.com/blog/accurate-coverage-number/">accurate info</a> to coveralls.io
-</li>
-<li><a href="https://github.com/bahmutov/available-versions">available-versions</a> returns newer releases for a given NPM module.</li>
-<li><a href="https://github.com/bahmutov/functional-pipeline">functional-pipeline</a> is super simple chaining for
-  property access, method and function calls. It is like _.invoke + _.pluck + _.compose in one function.
-</li>
-<li><a href="https://github.com/bahmutov/heroin">heroin</a> is a single dependency injection function for JavaScript
-changing methods to accept dependencies through separate object.
-</li>
-<li><a href="https://github.com/bahmutov/post-merge-make">post-merge-make</a> installs a Node git hook that runs after a merge.
-The hook executes <code>make post-merge</code> command and is useful to install dependencies and run builds after new code is pulled.
-I also wrote <a href="https://github.com/bahmutov/pre-commit-make">pre-commit-make</a> to run make before a commit.
-There is also <a href="https://github.com/bahmutov/pre-commit-make-parallel">pre-commit-make-parallel</a> to run make with parallel tasks.
-</li>
-<li><a href="https://github.com/bahmutov/lazy-ass">lazy-ass</a> is a lazy assertion function for node and browser.
-  Do not pay a performance penalty if the condition is false.
-</li>
-<li><a href="https://github.com/bahmutov/lazy-ass-helpful">lazy-ass-helpful</a> rewrites any function that uses <code>lazyAss</code>
-on the fly putting the condition expression into the message. Super useful for unit testing because you can skip writing
-extra messages in each assertion.
-</li>
-<li><a href="https://github.com/bahmutov/lazy-test">lazy-test</a> turns testing inside out. You inject small testing
-  framework and run the unit tests in production. Makes quick testing of code private to a closure possible, built on
-  <a href="https://github.com/bahmutov/test-mole">test-mole</a> principle.
-</li>
-<li><a href="https://github.com/bahmutov/scoreunder">scoreunder</a> is simple function to make underscore or lodash
-  libraries more functional by putting callback first, before data. Makes functional reuse <a href="http://glebbahmutov.com/blog/put-callback-first-for-elegance/">a lot more elegant</a>.
-</li>
-<li><a href="https://github.com/bahmutov/quiet-grunt">quiet-grunt</a> replaces grunt's output with dots if everything is going ok. If an error
-  happens, all output is dumped.
-</li>
-<li><a href="https://github.com/bahmutov/bunyan-gt">bunyan-gt</a> makes end to end program runs easy to analyze as if they were unit test by inspecting JSON log output</li>
-<li><a href="https://github.com/bahmutov/angular-q-timeout">ng-q-timeout</a> adds <code>.timeout</code> method to promises returned by angular $q service.</li>
-<li><a href="https://github.com/bahmutov/bdd-tree">bdd-tree</a> transforms BDD (jasmine, mocha) spec source into syntax tree.</li>
-<li><a href="https://github.com/bahmutov/ng-ast">ng-ast</a> builds a graph of loaded modules and what they provide from a running Angular app.</li>
-<li><a href="https://github.com/kensho/check-more-types">check-more-types</a> is a library of predicates, modifiers and defensive programming helpers</li>
-<li><a href="https://github.com/bahmutov/squint">squint</a> is a visual online tester for source code white space.
-  It is a cool project because I implemented it while watching "Overkill" presentation by <a href="https://twitter.com/kytrinyx">@kytrinyx</a>
-  at <a href="http://www.engineers4engineers.org/speakers#owen">engineers4engineers</a> conference, and thinking
-  "a tool like this would actually be useful".
-</li>
-<li><a href="https://github.com/bahmutov/quote">quote</a> safely adds quotes to given string without adding multiple ones.</li>
-<li><a href="https://github.com/bahmutov/quote-markdown">quote-markdown</a> adds markdown format characters around a string, like <code>`some code` or *emphasis*</code></li>
-<li><a href="https://github.com/bahmutov/find-missing-directives">find-missing-directives</a> detects empty tags in the page due to missing angular directives.</li>
-<li><a href="https://github.com/bahmutov/stop-angular-overrides">stop-angular-overrides</a> prevents silent and hard to debug angular module overrides.</li>
-<li><a href="https://github.com/bahmutov/ng-wrap">ng-wrap</a> allows you to wrap global variables into Angular dependencies on the fly.</li>
-<li><a href="https://github.com/bahmutov/d3-panel">d3-panel</a> adds d3 panel to the Chrome DevTools. You can now plot data while debugging web applications without leaving the browser console.</li>
-<li><a href="https://github.com/bahmutov/spots">spots</a> is partial application with placeholders.</li>
-<li><a href="https://github.com/bahmutov/eslint-rules">eslint-rules</a> is my collection of custom <a href="http://eslint.org/">eslint</a> rules.</li>
-<li><a href="https://github.com/bahmutov/ng-wedge">ng-wedge</a> intercepts <code>$http</code> requests sent by AngularJS app
-  without modifying the application code or installing extensions. Pure magic.</li>
-<li><a href="https://github.com/bahmutov/was-tested">was-tested</a> is a JavaScript code coverage proxy that instruments a live website on the fly.</li>
-<li><a href="https://github.com/bahmutov/tested-commits">tested-commits</a> splits JavaScript code coverage by commit.</li>
-<li><a href="https://github.com/bahmutov/turtle-run">turtle-run</a> is a testing proxy that slows down or aborts some requests.</li>
-<li><a href="https://github.com/bahmutov/service-turtle">service-turtle</a> is in page Ajax mocking proxy using a ServiceWorker.
-Read <a href="http://glebbahmutov.com/blog/robustness-testing-using-proxies/">Robustness testing using proxies</a>.</li>
-<li><a href="https://github.com/bahmutov/chdir-promise">chdir-promise</a> is a convenient promise-returning stack for changing the current working directory.</li>
-<li><a href="https://github.com/kensho/ng-describe">ng-describe</a> removes all boilerplate from AngularJS Karma specs.</li>
-<li><a href="https://github.com/bahmutov/was-it-used">was-it-used</a> - spy on 3rd party modules to tell if they were really used during testing.</li>
-<li><a href="https://github.com/bahmutov/q-flush">q-flush</a> - flushes Q promise chain on demand for simpler testing.</li>
-<li>I contributed a few features and plugins to <a href="https://github.com/davidmarkclements/cute-stack">cute-stack</a> - a beautiful Node exception stack reporter, for example see my plugin <a href="https://github.com/bahmutov/bad-line">bad-line</a>.</li>
-<li><a href="https://github.com/bahmutov/ng-hot-templates">ng-hot-templates</a> - reload single AngularJS custom directive in place while keeping the data. See <a href="https://www.youtube.com/watch?v=N5deNI0_caA">demo video</a></li>
-<li><a href="https://github.com/bahmutov/gulp-lint-everything">gulp-lint-everything</a> needs just a single command to lint the sources files using all linters.</li>
-<li><a href="https://github.com/bahmutov/debug-logdown>debug-logdown">debug-logdown</a> is flexible per-feature logger with Markdown support.</li>
-<li><a href="https://github.com/bahmutov/raven-express">raven-express</a> simplifies Sentry client initialization for Express servers.</li>
-<li><a href="https://github.com/bahmutov/inquirer-confirm">inquirer-confirm</a> is simple promise-returning CLI confirmation question with yes/no choices. Built on top of <a href="https://www.npmjs.com/package/inquirer">inquirer</a>.</li>
-<li><a href="https://github.com/bahmutov/crasher">crasher</a> is a tiny middleware for throwing sync and async errors; allows verifying your crash reporting setup.</li>
-<li><a href="https://github.com/bahmutov/PE-N-starter">PE-N-starter</a> is a dead simple starter project with PouchDB, Express, Node and Github auth. <a href="http://pe-n-starter.herokuapp.com/">Demo</a></li>
-<li><a href="https://github.com/bahmutov/cache-require-paths">cache-require-paths</a> and <a href="https://github.com/bahmutov/cache-require-source">cache-require-source</a> speed up the Node app startup, see <a href="http://glebbahmutov.com/blog/faster-node-app-require/">Faster Node app require</a>.</li>
-<li><a href="https://github.com/bahmutov/quickly">quickly</a> recursively starts all local programs necessary to test a program. Inspired by <a href="http://engineering.clever.com/2015/04/08/aviator-locally-launch-a-service-and-all-its-dependent-services/">Aviator</a>.</li>
-<li><a href="https://github.com/bahmutov/bdd-stdin">bdd-stdin</a> provides test responses to CLI stdin prompts.</li>
-<li><a href="https://github.com/bahmutov/functional-extract">functional-extract</a> quickly gives you nested properties and default values from an object.</li>
-<li><a href="https://github.com/bahmutov/obind">obind</a> is a small utility for partial application for functions taking a single argument object.</li>
-<li><a href="https://github.com/kensho/git-pages">git-pages</a> lets you run your own github pages-like static website.</li>
-<li><a href="https://github.com/bahmutov/grunty">grunty</a> runs a single Grunt plugin without writing Gruntfile.js, useful for NPM scripts.</li>
-<li><a href="https://github.com/bahmutov/last-commit">last-commit</a> saves and reads last commit to allow easy <a href="http://glebbahmutov.com/blog/deployed-commit/">git id embedding</a> into server-side code.</li>
-<li><a href="https://github.com/bahmutov/render-vars">render-vars</a> provides same variables across all Expressjs rendered views.</li>
-<li><a href="https://github.com/bahmutov/useful-express-partials">useful-express-partials</a> are several useful partial views for ExpressJS server (analytics, crash reporting).</li>
-<li><a href="https://github.com/bahmutov/with-package">with-package</a> uses values from the <code>package.json</code> in the NPM script commands.</li>
-<li><a href="https://github.com/bahmutov/changed-log">changed-log</a> returns list of commit messages for any NPM module between given two tags. Great for finding what has changes between two versions.</li>
-<li><a href="https://github.com/bahmutov/csv-pair">csv-pair</a> combines a pair of CSV file collapsing identical columns.</li>
-<li><a href="https://github.com/bahmutov/first-existing">first-existing</a> finds the first file existing on disk from the list of arguments.</li>
-<li><a href="https://github.com/bahmutov/csrf-login">csrf-login</a> allows to login from the command line to websites that use CSRF protection.</li>
-<li><a href="https://github.com/bahmutov/get-username-and-password">get-username-and-password</a> is promise-returning function that asks user to enter username and password. Or reads from the environment.</li>
-<li><a href="https://github.com/bahmutov/describe-it">describe-it</a> extracts a private function or variable for BDD unit testing. No source code modification necessary, works via NodeJS loader <a href="https://github.com/bahmutov/really-need">really-need</a>.</li>
-<li><a href="https://github.com/bahmutov/changed-complexity">changed-complexity</a> is a useful CLI tool that tells you how the modified JS files changed in complexity. Lets you judge the commits better.</li>
-<li><a href="https://github.com/bahmutov/modules-used">modules-used</a> makes a Markdown list of your project's dependencies to share used tools.</li>
-<li><a href="https://github.com/bahmutov/center-code">center-code</a> shows syntax-highlighted file contents in the center of your terminal. Great for demos and live coding.</li>
-<li><a href="https://github.com/bahmutov/update-markdown">update-markdown</a> updates a single markdown section with new content.</li>
-<li><a href="https://github.com/bahmutov/crash-reporter-middleware">crash-reporter-middleware</a> sets the first available crash reporting middleware client by looking at environment keys.</li>
-<li><a href="https://github.com/bahmutov/object-fitter">object-fitter</a> eliminates properties from objects until they fit size limit.</li>
-<li><a href="https://github.com/bahmutov/error-receiver">error-receiver</a> - your own crash information collector server, described in <a href="http://glebbahmutov.com/blog/stand-your-own-crash-server/">this blog post</a>.</li>
-<li><a href="https://github.com/bahmutov/exact-semver">exact-semver</a> is a global script or local tool to clean up the fuzzy versions from your package.json dependencies.</li>
-<li><a href="https://github.com/bahmutov/js-to-js">js-to-js</a> is Express template engine for rendering input JavaScript modules as external JavaScript snippets to allow 
-<a href="http://glebbahmutov.com/blog/disable-inline-javascript-for-security/">very strict and safe Content-Security-Policy to fight script injection attacks.</a></li>
-<li><a href="https://github.com/bahmutov/npm-module-checklist">npm-module-checklist</a> is a good checklist for any NPM package author to use.</li>
-<li><a href="https://github.com/bahmutov/manpm">manpm</a> is the <code>man</code> for <code>NPM</code> modules, based on searching the README files.</li>
-<li><a href="https://github.com/bahmutov/condition-circle">condition-circle</a> is <a href="https://github.com/semantic-release/semantic-release">semantic-release</a> plugin for publishing to NPM from CircleCI</li>
-<li><a href="https://github.com/bahmutov/condition-node-version">condition-node-version</a> is another <a href="https://github.com/semantic-release/semantic-release">semantic-release</a> plugin that only publishes from specific Node version CI build, avoiding TravisCI timing problems.</li>
-<li><a href="https://github.com/bahmutov/top-dependents">top-dependents</a> fetches modules dependent on specific module, sorted by downloads or stars.</li>
-<li><a href="https://github.com/bahmutov/left-behind">left-behind</a> shows what version your dependent projects are using compared to your current one.</li>
-<li><a href="https://github.com/bahmutov/simple-bin-help">simple-bin-help</a> is a utility for CLI bin scripts to show basic help if the number of arguments is insufficient.</li>
-<li><a href="https://github.com/bahmutov/npm-quick-run">npm-quick-run</a> lets me run NPM scripts by shortest matching prefix, like this <code>nr i</code> instead of <code>npm test</code> and <code>nr g --all</code> instead of <code>npm run git-issues -- --all</code>.</li>
-<li><a href="https://github.com/bahmutov/ban-sensitive-files">ban-sensitive-files</a> tries to stop you from committing private and confidential files to the Git repo.</li>
-</ul>
-
-<em>front-end components:</em>
-<ul>
-  <li><a href="https://github.com/bahmutov/iframe-api">iframe-api</a> is bidirectional communication between parent website and iframed website.</li>
-  <li><a href="http://glebbahmutov.com/color-pusher/">color-pusher</a> is a widget geared towards real time
-    website color tweaking.
-    Allows anyone to change multiple page colors, including swapping an entire external palette. I created
-    <em>color-pusher</em> to give graphic designers power to tweak live websites without making a round trip to
-    a developer to deploy the new color scheme. There is a Chrome DevTools
-<a href="https://chrome.google.com/webstore/detail/color-pusher/gcahnlgconcbplfboahcgaobkpdhidee">panel extension</a>,
-<a href="https://github.com/bahmutov/color-pusher-chrome">source</a>, that allows editing any live website.
-  </li>
-  <li><a href="http://glebbahmutov.com/code-box/">code-box</a> is a lightbox for code blocks. Adds full screen lightbox
-    to all code elements in your page with single call.
-  </li>
-  <li><a href="https://github.com/bahmutov/progress-full-width">progress-full-width</a> is a progress bar along
-  the bottom of the page, can be stacked or run on a timer.</li>
-  <li><a href="https://github.com/bahmutov/timer-bar">timer-bar</a> is a progress bar connected to a timer for finishing presentations on time.</li>
-  <li><a href="https://github.com/bahmutov/sticky-right-top-icon">sticky-right-top-icon</a> adds a sticky icon to
-any element, even if it has scrollable content inside.</li>
-<li><a href="https://github.com/bahmutov/code-snippets">code-snippets</a> are performance snippets for Chrome DevTools
-for debugging and fine-tuning application performance. Read how to use them in
-<a href="http://glebbahmutov.com/blog/chrome-devtools-code-snippets/">this blog post</a>. Featured in <a href="http://calendar.perfplanet.com/2014/performance-measurements-using-chrome-devtools-code-snippets/">Performance Calendar</a> 2014.</li>
-<li><a href="https://github.com/bahmutov/overflowing">overflowing</a> finds elements that do not look right. Makes it simple to detect basic responsive layout problems </li>
-<li><a href="https://github.com/bahmutov/check-element-attribute">check-element-attribute</a> overwrites <code>Element.prototype.setAttribute</code> to validate passed value, especially used in SVG/D3 code.</li>
-<li><a href="https://github.com/bahmutov/self-addressed">self-addressed</a> converts iframe communication into promise returning calls.</li>
-<li><a href="https://github.com/bahmutov/console-log-div">console-log-div</a> mirrors <code>console.log</code> calls to a div created and shown at the bottom of the page. Great for demos and experiments.</li>
-<li><a href="https://github.com/bahmutov/script-attributes">script-attributes</a> helps read script arguments from the script tag.</li>
-<li><a href="https://github.com/kensho/ng-alertify">ng-alertify</a> is AngularJS wrapper around <a href="http://fabien-d.github.io/alertify.js/">alertify.js</a> popup library.</li>
-<li><a href="https://github.com/kensho/ng-waffle">ng-waffle</a> is AngularJS wrapper for <a href="https://github.com/jsocol/django-waffle">Django Waffle</a>.</li>
-<li><a href="https://github.com/bahmutov/confirm-click">confirm-click</a> asks the user to confirm when clicked on <code>href, ng-href</code> or even before executing <code>ng-click</code> action.</code></li>
-<li><a href="https://github.com/bahmutov/angular-in-web-worker">angular in web worker</a> is a demo of running full AngularJS 1.x inside a web worker.</li>
-<li><a href="https://github.com/bahmutov/ng-http-estimate">ng-http-estimate</a> is a configurable $http time request estimator.</li>
-<li><a href="https://github.com/bahmutov/freeze-prototypes">freeze-prototypes</a> is tiny code to prevent <a href="http://glebbahmutov.com/blog/unapply-attack/">unapply-style attacks</a> that modify common prototypes.</li>
-<li><a href="https://github.com/bahmutov/ng-simple-webrtc">ng-simple-webrtc</a> has two tiny directives for broadcasting and watching a room via WebRTC protocol.</li>
-<li><a href="https://github.com/bahmutov/unit-testing-angularjs-tutorial">unit-testing-angularjs-tutorial</a> a tutorial on testing AngularJS code using <a href="https://github.com/kensho/ng-describe">ng-describe</a> library.</li>
-<li><a href="https://github.com/bahmutov/ng-services">ng-services</a> is a wrapper for using AngularJS code from apps that do not want AngularJS.</li>
-<li><a href="https://github.com/bahmutov/bundle-angular-for-web-worker">bundle-angular-for-web-worker</a> bundles Angular 1.x library to be able to run in a WebWorker.</li>
-<li><a href="https://github.com/bahmutov/ng-services">ng-services</a> are Angular data services for application that don't want to be Angular.</li>
-</ul>
-
-<h3 id="yesterday">Yesterday</h3>
-
-<p>I worked at <a href="http://www.utest.com/">uTest</a> for half a year, mostly bringing together and updating various front end technology stacks.</p>
-
-<p>I worked for a year at <a href="http://www.mathworks.com/">MathWorks</a>, helping to bring the power of MATLAB to the browser.</p>
-
-<p>Earlier I spent four years as a researcher at <a href="http://www.everyscape.com/">EveryScape</a>, writing panorama stitching and 3D modeling software. Before that I worked calibrating 3D laser scanners and developing white light scanners. Even before that I wrote distributed database access software that worked across Objective-C, C and Java systems.</p>
-
-<h3 id="talks">Talks</h3>
-
-<p>I am a member of multiple meetups in the Boston area and spoke about
-<a href="https://github.com/bahmutov/talks/blob/master/grunt.md">grunt</a>,
-<a href="https://github.com/bahmutov/talks/blob/master/coverage-and-tests.md">code coverage and testing</a>,
-<a href="https://github.com/bahmutov/talks/blob/master/risk-map.md">technical debt visualization</a>,
-<a href="https://github.com/bahmutov/talks/blob/master/dependencies-best-practices-node.md">best practices for handling
-  dependencies</a>,
-<a href="https://github.com/bahmutov/talks/blob/master/agile-software-quality.md">agile software quality</a>,
-<a href="http://slides.com/bahmutov/angularjs-performance/">angular performance</a>,
-<a href="http://slides.com/bahmutov/code-snippets/">Chrome code snippets</a> and many other topics.
-You can find most of my slide decks at <a href="https://slides.com/bahmutov" title="Slide decks from my presentations">slides.com/bahmutov</a>.
-</p>
-
-<h3 id="education">Education</h3>
-
-<p>Doctorate from Purdue University (West Lafayette, Indiana) working with Dr. Voice Popescu (adviser) and Dr. Mihai Mudure (fellow candidate), developing a novel scanning sensor. We were building 3D models of rooms in real time using a video camera and a bunch of lasers. If you were afraid of lasers, you could be anywhere else in the world, observing the results over the internet, as our system was smart enough to incrementally update the 3D model and send the results in real time.</p>
-
-<h3>Small print</h3>
-
-<p>Some of my github repositories are not up to date, while I am working on cleaning up the code.</p>
-  </div>
+          <ul id="projects">
+            <li v-for="project in projects | filterBy searchText"
+              transition="fade" v-html="project.html" />
+          </ul>
+        </div>
       </section>
     </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- yesterday -->
+    <div class="container">
+      <h3 id="yesterday">Yesterday</h3>
 
-  ga('create', 'UA-41650865-2', 'glebbahmutov.com');
-  ga('send', 'pageview');
+      <p>I worked at <a href="http://www.utest.com/">uTest</a> for half a year, mostly bringing together and updating various front end technology stacks.</p>
 
-</script>
+      <p>I worked for a year at <a href="http://www.mathworks.com/">MathWorks</a>, helping to bring the power of MATLAB to the browser.</p>
 
+      <p>Earlier I spent four years as a researcher at <a href="http://www.everyscape.com/">EveryScape</a>, writing panorama stitching and 3D modeling software. Before that I worked calibrating 3D laser scanners and developing white light scanners. Even before that I wrote distributed database access software that worked across Objective-C, C and Java systems.</p>
+
+      <h3 id="talks">Talks</h3>
+
+      <p>I am a member of multiple meetups in the Boston area and spoke about
+      <a href="https://github.com/bahmutov/talks/blob/master/grunt.md">grunt</a>,
+      <a href="https://github.com/bahmutov/talks/blob/master/coverage-and-tests.md">code coverage and testing</a>,
+      <a href="https://github.com/bahmutov/talks/blob/master/risk-map.md">technical debt visualization</a>,
+      <a href="https://github.com/bahmutov/talks/blob/master/dependencies-best-practices-node.md">best practices for handling dependencies</a>,
+      <a href="https://github.com/bahmutov/talks/blob/master/agile-software-quality.md">agile software quality</a>,
+      <a href="http://slides.com/bahmutov/angularjs-performance/">angular performance</a>,
+      <a href="http://slides.com/bahmutov/code-snippets/">Chrome code snippets</a> and many other topics.
+      You can find most of my slide decks at <a href="https://slides.com/bahmutov" title="Slide decks from my presentations">slides.com/bahmutov</a>.
+      </p>
+
+      <h3 id="education">Education</h3>
+
+      <p>Doctorate from Purdue University (West Lafayette, Indiana) working with Dr. Voice Popescu (adviser) and Dr. Mihai Mudure (fellow candidate), developing a novel scanning sensor. We were building 3D models of rooms in real time using a video camera and a bunch of lasers. If you were afraid of lasers, you could be anywhere else in the world, observing the results over the internet, as our system was smart enough to incrementally update the 3D model and send the results in real time.</p>
+
+      <h3>Small print</h3>
+
+      <p>Some of my github repositories are not up to date, while I am working on cleaning up the code.</p>
+    </div>
+
+    <script src="dist/build.js"></script>
+    <script src="dist/ga.js"></script>
+    <!--
+    <script src="dist/custom-search.js"></script>
+    -->
   </body>
 </html>
