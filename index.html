@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="styles/pygment_trac.css" media="screen" />
 
     <script src="dist/custom-search-redirect.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <header>
@@ -65,9 +64,10 @@
       <p>In my spare time I built some cool stuff; see the links below. I try to keep modules small because I <a href="https://github.com/sindresorhus/ama/issues/10">agree with Sindre Sorhus</a>.</p>
 
       <section id="main_content">
-        <div id="projects-list">
-          <input type="text" autofocus v-model="searchText"
-            placeholder="Project name, tag, text ..." id="project-search-text"
+        <div id="projects-list" class="hidden">
+          <input type="text" id="project-search-text"
+            autofocus v-model="searchText"
+            placeholder="Project name, tag, text ..."
             debounce="300">
 
           <ul id="projects">
@@ -75,6 +75,10 @@
               transition="fade" v-html="project.html" />
           </ul>
         </div>
+        <script src="dist/hydrate-app.js"
+          id="projects-list"
+          verbose="true"
+          verbose-ui="false"></script>
       </section>
     </div>
 
@@ -110,6 +114,7 @@
       <p>Some of my github repositories are not up to date, while I am working on cleaning up the code.</p>
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="dist/build.js"></script>
     <script src="dist/ga.js"></script>
     <!--
