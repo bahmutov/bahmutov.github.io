@@ -24,8 +24,8 @@
         <h1>Dr. Gleb Bahmutov, PhD</h1>
         <h2>JavaScript ninja, image processing expert, software quality fanatic</h2>
 
-        <a href="https://github.com/bahmutov" title="Find my email at my GitHub page">email</a>
-        <a href="https://glebbahmutov.com/blog/" title="Better world by better software">blog</a>
+        <a href="mailto:gleb.bahmutov@gmail.com">email</a>
+        <a href="http://glebbahmutov.com/blog/" title="Better world by better software">blog</a>
         <a href="https://github.com/bahmutov" title="My projects at github">github</a>
         <a href="https://twitter.com/bahmutov" title="Twitter @bahmutov">@bahmutov</a>
         <!--
@@ -60,12 +60,12 @@
         </p>
       </div>
     </div>
-    <div class="container">
-      <h3 id="today">Projects</h3>
+    <div class="container" id="app" class="hidden">
+      <h3 id="today">{{ projects.length }} OSS projects</h3>
       <p>In my spare time I built some cool stuff; see the links below. I try to keep modules small because I <a href="https://github.com/sindresorhus/ama/issues/10">agree with Sindre Sorhus</a>.</p>
 
       <section id="main_content">
-        <div id="projects-list" class="hidden">
+        <div id="projects-list">
           <input type="text" id="project-search-text"
             autofocus v-model="searchText"
             placeholder="Project name, tag, text ..."
@@ -76,12 +76,12 @@
               transition="fade" v-html="project.html" />
           </ul>
         </div>
-        <script src="dist/hydrate-app.js"
-          id="projects-list"
-          verbose="true"
-          verbose-ui="false"></script>
       </section>
     </div>
+    <script src="dist/hydrate-app.js"
+      id="app"
+      verbose="true"
+      verbose-ui="false"></script>
 
     <!-- yesterday -->
     <div id="about" class="container">
