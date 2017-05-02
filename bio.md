@@ -1,11 +1,10 @@
 Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. 
 After receiving a PhD in computer science from Purdue University, 
-Gleb worked on laser scanners, 3D reconstruction, and panorama-based virtual tours at EveryScape. 
+Gleb worked on laser scanners, 3D reconstruction, and panorama-based virtual tours at EveryScape.
 Later Gleb switched to writing browser data visualization software at MathWorks. 
-After a year, Gleb went back to the startup environment and developed software quality 
-analysis tools at uTest (now Applause). Later he was invited to build the front end and Node services at  
-Kensho - a financial analysis startup, whose web application is used by the top five world banks 
-and CNBC business channel.
+After a year, Gleb went back to the startup environment and developed software quality analysis tools at uTest (now Applause). 
+Later he was invited to build the front end and Node services at Kensho - a financial analysis startup, whose web 
+application is used by the top five world banks and CNBC business channel.
 
 Today Gleb is VP of Engineering at [Cypress.io](https://www.cypress.io/) 
 working on a revolutionary end to end testing tool for modern web applications.
