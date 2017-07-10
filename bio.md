@@ -1,7 +1,6 @@
 ## short version
 
-Gleb Bahmutov is JavaScript ninja (OSS street cred at https://github.com/bahmutov), 
-image processing expert (PhD in computer vision from Purdue University) 
+Gleb Bahmutov is JavaScript ninja, image processing expert (PhD in computer vision from Purdue University) 
 and software quality fanatic (his blog http://glebbahmutov.com/blog/ is full of passionate screeds).
 During the day Gleb is making the web a better place as VP of Engineering at 
 [Cypress.io](https://www.cypress.io/). 
