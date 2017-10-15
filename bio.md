@@ -3,7 +3,8 @@
 Gleb Bahmutov is JavaScript ninja, image processing expert (PhD in computer vision from Purdue University) 
 and software quality fanatic (his blog http://glebbahmutov.com/blog/ is full of passionate screeds).
 During the day Gleb is making the web a better place as VP of Engineering at 
-[Cypress.io](https://www.cypress.io/). 
+[Cypress.io](https://www.cypress.io/). At night he is fighting software bugs and blogs about it.
+
 You can follow him and his work [@bahmutov](https://twitter.com/bahmutov)
 and find the slides from conference presentations at https://slides.com/bahmutov.
 
