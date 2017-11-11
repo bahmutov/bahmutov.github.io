@@ -25,7 +25,8 @@ bring his experience and view of software quality to a much larger developer com
 
 Gleb blogs a lot about software development topics at [http://glebbahmutov.com/blog/](http://glebbahmutov.com/blog/)
 and links his open source projects at [http://glebbahmutov.com/](http://glebbahmutov.com/). 
-You can follow him and his work [@bahmutov](https://twitter.com/bahmutov) and find the slides from previous
+You can follow him and his work [https://twitter.com/@bahmutov](https://twitter.com/bahmutov) 
+and find the slides from previous
 conference presentations at [https://slides.com/bahmutov](https://slides.com/bahmutov).
 
 Кандидат наук и мастер JavaScript, Глеб работал и в больших компаниях и только начинающих. 
