@@ -2,7 +2,7 @@
 
 Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. 
 During the day Gleb is making the web a better place as VP of Engineering at [Cypress.io](https://www.cypress.io/). 
-At night he is fighting software bugs and blogs about it at http://glebbahmutov.com/blog/.
+At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/.
 
 You can follow him and his work [@bahmutov](https://twitter.com/bahmutov)
 and find the slides from conference presentations at https://slides.com/bahmutov.
@@ -23,13 +23,13 @@ Backed by VC financing and adored by early adapters, Cypress is changing
 the test writing experience. Joining Cypress in a leading role allows Gleb to
 bring his experience and view of software quality to a much larger developer community.
 
-Gleb blogs a lot about software development topics at [http://glebbahmutov.com/blog/](http://glebbahmutov.com/blog/)
-and links his open source projects at [http://glebbahmutov.com/](http://glebbahmutov.com/). 
+Gleb blogs a lot about software development topics at [https://glebbahmutov.com/blog/](http://glebbahmutov.com/blog/)
+and links his open source projects at [https://glebbahmutov.com/](http://glebbahmutov.com/). 
 You can follow him and his work [https://twitter.com/@bahmutov](https://twitter.com/bahmutov) 
 and find the slides from previous
 conference presentations at [https://slides.com/bahmutov](https://slides.com/bahmutov).
 
 Кандидат наук и мастер JavaScript, Глеб работал и в больших компаниях и только начинающих. 
 Он выступал по всему миру на темы быстрого программирования, качественного софта и надежных приложений. 
-Его блог (на английском языке) находится на http://glebbahmutov.com/blog/ и сотни проектов и 
-другой информации на сайте http://glebbahmutov.com/
+Его блог (на английском языке) находится на https://glebbahmutov.com/blog/ и сотни проектов и 
+другой информации на сайте https://glebbahmutov.com/
