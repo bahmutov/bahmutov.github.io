@@ -2,7 +2,7 @@
 
 Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. 
 During the day Gleb is making the web a better place as VP of Engineering at [Cypress.io](https://www.cypress.io/). 
-At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/.
+At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/. Microsoft [MVP for Open Source Software](https://mvp.microsoft.com/en-us/MvpSearch?kw=gleb+bahmutov).
 
 You can follow him and his work [@bahmutov](https://twitter.com/bahmutov)
 and find the slides from conference presentations at https://slides.com/bahmutov.
