@@ -12,6 +12,7 @@
         https://cdn.ravenjs.com
         https://code.jquery.com
         https://www.google-analytics.com
+        https://assets.digitalclimatestrike.net
         'self';
         style-src 'self';">
 
@@ -21,6 +22,8 @@
     <script src="https://cdn.ravenjs.com/3.9.1/raven.min.js"></script>
     <script src="dist/raven-init.js"></script>
     <script src="dist/custom-search-redirect.js"></script>
+    <!-- https://digital.globalclimatestrike.net/#website-assets -->
+    <script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
   </head>
   <body>
     <header>
@@ -67,7 +70,7 @@
       </div>
     </div>
     <div class="container" id="app" class="hidden">
-      <h3 id="today">{{ projects.length }} OSS projects</h3>
+      <h3 id="projects-count">{{ projects.length }} OSS projects</h3>
       <p>In my spare time I built some cool stuff; see the links below. I try to keep modules small because I <a href="https://github.com/sindresorhus/ama/issues/10">agree with Sindre Sorhus</a>.</p>
 
       <section id="main_content">
@@ -93,12 +96,12 @@
     <div id="about" class="container">
       <h3>About me</h3>
       <ul>
-        <li>Read a couple <a href="interviews">interviews</a> with me</li>
-        <li>I am pretty good at JS / NodeJS / security / performance / web / code quality stuff,
+        <li>I am a good at JS / NodeJS / security / performance / web / code quality stuff,
           <a href="http://github-awards.com/users?city=boston&language=JavaScript&type=city">Boston rankings</a></li>
         <li>I know how to make other developers around me work smarter and be more productive,
           described in <a href="https://glebbahmutov.com/blog/the-senior-engineer-role/">this blog post</a> and
           <a href="https://glebbahmutov.com/blog/categories/people/">many others</a></li>
+        <li>I make the company more attractive to other top notch engineers</li>
       </ul>
       <h3 id="yesterday">Yesterday</h3>
 
@@ -129,7 +132,7 @@
 
       <h3 id="education">Education</h3>
 
-      <p>Doctorate from Purdue University (West Lafayette, Indiana) working with Dr. Voicu Popescu (adviser) and Dr. Mihai Mudure (fellow candidate), developing a novel scanning sensor. We were building 3D models of rooms in real time using a video camera and a bunch of lasers. If you were afraid of lasers, you could be anywhere else in the world, observing the results over the internet, as our system was smart enough to incrementally update the 3D model and send the results in real time.</p>
+      <p>Doctorate from Purdue University (West Lafayette, Indiana) working with Dr. Voice Popescu (adviser) and Dr. Mihai Mudure (fellow candidate), developing a novel scanning sensor. We were building 3D models of rooms in real time using a video camera and a bunch of lasers. If you were afraid of lasers, you could be anywhere else in the world, observing the results over the internet, as our system was smart enough to incrementally update the 3D model and send the results in real time.</p>
 
       <h3>Small print</h3>
 
