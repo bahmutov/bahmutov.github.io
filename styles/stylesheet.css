@@ -1,7 +1,16 @@
+/* for app hydration - hides the initial app template
+   before it is ready
+*/
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
+  /*background: #151515 url("../images/bkg.png") 0 0;*/
+  background-color: #151515;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -145,9 +154,9 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1) url("../images/warming-stripes.png") 0 0;
+  background-size: 100%;
   width: 100%;
-  /*border-bottom: 1px dashed #b5e853;*/
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
 }
@@ -164,21 +173,22 @@ header h1 {
                0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
+  text-shadow: black 2px 2px 2px;
   /* prevent text from breaking into multiple lines */
   white-space: nowrap;
   overflow: hidden;
 }
 
-/*
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}*/
-
 header h2 {
   font-size: 18px;
-  font-weight: 300;
-  color: #888;
+  font-weight: 400;
+  color: white;
+  text-shadow: black 1px 1px 1px;
+}
+
+header a {
+  font-weight: 400;
+  text-shadow: black 1px 1px 1px;
 }
 
 #downloads .btn {
