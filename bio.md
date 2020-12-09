@@ -1,6 +1,6 @@
 ## short version
 
-Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. 
+Gleb Bahmutov is a JavaScript ninja, image processing expert, and software quality fanatic. 
 During the day Gleb is making the web a better place as VP of Engineering at [Cypress.io](https://www.cypress.io/). 
 At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/.
 
@@ -9,7 +9,7 @@ and find the slides from conference presentations at https://slides.com/bahmutov
 
 ## longer version
 
-Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. 
+Gleb Bahmutov is a JavaScript ninja, image processing expert, and software quality fanatic. 
 After receiving a PhD in computer science from Purdue University, 
 Gleb worked on laser scanners, 3D reconstruction, and panorama-based virtual tours at EveryScape.
 Next Gleb switched to writing browser data visualization software at MathWorks. 
