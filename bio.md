@@ -1,7 +1,7 @@
 ## short version
 
 Gleb Bahmutov is a JavaScript ninja, image processing expert, and software quality fanatic. 
-During the day Gleb is making the web a better place as VP of Engineering at [Cypress.io](https://www.cypress.io/). 
+During the day Gleb is making the web a better place as a Distinguished Engineer at [Cypress.io](https://www.cypress.io/). 
 At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/.
 
 You can follow him and his work [@bahmutov](https://twitter.com/bahmutov)
@@ -17,8 +17,9 @@ After a year, Gleb went back to the startup environment and developed software q
 He then moved on to build the front end and Node services at Kensho - a financial analysis startup, whose web 
 application is used by the top five world banks.
 
-Today, Gleb is VP of Engineering at [Cypress.io](https://www.cypress.io/) 
-working on a revolutionary end to end testing tool for modern web applications.
+Today, Gleb is Distinguished Engineer at [Cypress.io](https://www.cypress.io/),
+where he has first spent four years as VP of Engineering.
+He is working on a revolutionary end to end testing tool for modern web applications.
 Backed by VC financing and adored by early adapters, Cypress is changing
 the test writing experience. Joining Cypress in a leading role allows Gleb to
 bring his experience and view of software quality to a much larger developer community.
