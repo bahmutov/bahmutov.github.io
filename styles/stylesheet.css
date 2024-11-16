@@ -143,6 +143,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 
+/* links inside h3 */
+h3 a {
+  text-decoration: none;
+  /* do not use link color */
+  color: inherit;
+}
+
+h3 a::after {
+  content: "⚓︎";
+  margin-left: 0.5em;
+  opacity: 0.5;
+}
+
 li {
   line-height: 1.4 ;
 }
