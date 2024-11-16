@@ -2,6 +2,6 @@
 
 Personal page by Gleb Bahmutov - JavaScript ninja and a good person.
 
-- [glebbahmutov.com](http://glebbahmutov.com/)
+- [glebbahmutov.com](https://glebbahmutov.com/)
 - [https://github.com/bahmutov/](https://github.com/bahmutov/)
-- [twitter.com/@bahmutov](https://twitter.com/bahmutov)
+- [bahmutov.bsky.social](https://bsky.app/profile/bahmutov.bsky.social)
