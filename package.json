@@ -1,0 +1,15 @@
+{
+  "name": "bahmutov.github.io",
+  "version": "1.0.0",
+  "description": "Personal page by Gleb Bahmutov - JavaScript ninja and a good person.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
