@@ -14,7 +14,9 @@ body {
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family:
+    Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal,
+    monospace;
 }
 
 /* adjust custom search result display */
@@ -29,7 +31,7 @@ body {
 }
 
 .gsc-control-cse:before {
-  content: "Search my projects and blog posts";
+  content: 'Search my projects and blog posts';
   margin-left: 10px;
   color: #eaeaea;
 }
@@ -63,7 +65,12 @@ a.gs-title {
   text-shadow: none !important;
 }
 
-.gsc-result-info-container, .gsc-result-info, .gsc-result, .gs-webResult .gs-snippet, a.gs-label, .gsc-inline-block {
+.gsc-result-info-container,
+.gsc-result-info,
+.gsc-result,
+.gs-webResult .gs-snippet,
+a.gs-label,
+.gsc-inline-block {
   background-color: #151515 !important;
   color: #eaeaea !important;
 }
@@ -133,13 +140,17 @@ a.gs-title {
   margin: 0 auto;
 }
 
-
 section {
   display: block;
   margin: 0 0 20px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 20px;
 }
 
@@ -151,13 +162,13 @@ h3 a {
 }
 
 h3 a::after {
-  content: "⚓︎";
+  content: '⚓︎';
   margin-left: 0.5em;
   opacity: 0.5;
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.4;
 }
 
 /* Header, <header>
@@ -167,7 +178,8 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1) url("../images/warming-stripes.png") 0 0;
+  background: rgba(0, 0, 0, 0.1) url('../images/warming-stripes.png')
+    0 0;
   background-size: 100%;
   width: 100%;
   padding: 20px 0 5px 0;
@@ -179,11 +191,14 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 0px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family:
+    Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal,
+    monospace;
   color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
   text-shadow: black 2px 2px 2px;
@@ -218,17 +233,25 @@ header a {
   -webkit-font-smoothing: antialiased;
 }
 section img {
-  max-width: 100%
+  max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family:
+    Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal,
+    monospace;
   color: #b5e853;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -270,8 +293,10 @@ ul li {
 }
 
 ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  content: '>>';
+  font-family:
+    Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal,
+    monospace;
   font-size: 13px;
   color: #b5e853;
   margin-left: -37px;
@@ -327,12 +352,17 @@ hr {
   color: #b5e853;
 }
 
-/* Buttons
-*/
+/* Buttons */
 
 .btn {
   display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 40, 40, 0.3),
+    rgba(35, 35, 35, 0.3) 50%,
+    rgba(10, 10, 10, 0.3) 50%,
+    rgba(0, 0, 0, 0.3)
+  );
   padding: 8px 18px;
   border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.7);
@@ -348,7 +378,13 @@ hr {
 }
 
 .btn:hover {
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 40, 40, 0.6),
+    rgba(35, 35, 35, 0.6) 50%,
+    rgba(10, 10, 10, 0.8) 50%,
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .btn .icon {
@@ -361,7 +397,7 @@ hr {
 
 .btn-github .icon {
   opacity: 0.6;
-  background: url("../images/blacktocat.png") 0 0 no-repeat;
+  background: url('../images/blacktocat.png') 0 0 no-repeat;
 }
 
 /* Links
@@ -375,20 +411,21 @@ a {
 
 /* Clearfix */
 
-.cf:before, .cf:after {
-  content:"";
-  display:table;
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
 }
 
 .cf:after {
-  clear:both;
+  clear: both;
 }
 
 .cf {
-  zoom:1;
+  zoom: 1;
 }
 
-@media only screen and (max-width : 520px) {
+@media only screen and (max-width: 520px) {
   /* better style for small screens */
   #project-search-text {
     width: 90%;
@@ -408,6 +445,10 @@ a {
     -webkit-padding-start: 0;
   }
 
+  ul {
+    padding-inline-start: 10px;
+  }
+
   ul li {
     margin-bottom: 0.5em;
     margin-left: 0;
@@ -419,10 +460,9 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
-
 }
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width: 320px) {
   /* better style for phone screens */
 
   .container {
@@ -440,10 +480,14 @@ a {
   }
 
   header h1:before {
-    content: "";
+    content: '';
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0 0 5px;
   }
 
